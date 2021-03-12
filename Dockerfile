@@ -35,4 +35,4 @@ RUN wget "https://github.com/opentracing/opentracing-cpp/archive/v${OPENTRACING_
 
 FROM scratch
 
-COPY --from=buildstage /usr/local/lib/ /opentracing/
+COPY --from=buildstage / /
